@@ -1,4 +1,4 @@
-# A Novel Measure of Non-coding Genome Con-servation Identifies Genomic Regulatory Blocks Within Primates
+# A Novel Measure of Non-coding Genome Conservation Identifies Genomic Regulatory Blocks Within Primates
 ### Alexander J. Nash<sup>1, 2</sup> and Boris Lenhard<sup>1, 2, *</sup>
 <sup>1</sup>Computational Regulatory Genomics Group, MRC London Institute of Medical Sciences, Du Cane Road, London W12 0NN, UK, <sup>2</sup>Institute of Clinical Sciences, Faculty of Medicine, Imperial College London, Hammersmith Campus, Du Cane Road, London W12 0NN, UK.
 <sup>*</sup>To whom correspondence should be addressed. 
