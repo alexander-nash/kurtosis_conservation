@@ -1,9 +1,6 @@
 library(GenomicRanges)
 library(rtracklayer)
 library(data.table)
-
-.libPaths("/mnt/biggles/csc_home/an1413/Rlibs/")
-
 library(cpm)
 library(randtests)
 library(npsm)
