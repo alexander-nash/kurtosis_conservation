@@ -12,3 +12,15 @@ __Results:__ We present a novel, kurtosis-based measure of pairwise non-coding c
 ## Scripts and data used for publication
 
 General kurtosis scripts are located in the base directory, while all Data is found in /Data/
+
+## How to use the provided scripts
+
+At this point, paths are hardcoded in the scripts. In time these will be updated, but for now the paths will need to be manually changed by the user. 
+
+### get_identical_seq_locations.R
+
+This is the script used to identify all the runs of perfect sequence identity between the two species of interest. It takes 4 arguments, the first is genome assembly abbreviation of the reference species of interest (e.g. hg38, mm10, dm6), while the second is the genome assembly of the query species which will be compared to the reference species. The third argument is a chromosome argument. This is used to parallelise the script such that each chromosome is run as a separate job. This isn't necessary for smaller genomes, but significantly improves speed for large genomes. The chromosome argument should be provided in UCSC style (e.g. chr1, chr20). The fourth argument is a logical (TRUE/FALSE) indicating whether the job should run on an individual chromosome or not. If this argument is FALSE, then the chromosome argument is ignored. 
+
+For this script to run, you must have two .axt alignments, one for reference species to query species, and one for query species to reference species. These can be generated using LASTZ. You must also have .2bit files for both genome assemblies. At the moment the two species arguments serve as a way to locate the .axt and .2bit files in hard coded directories. For now, these directories will have to be manually changed in the script. 
+
+The script produces a .tsv file containing the coordinates (in the reference species genome) of all runs of sequence identity between the two species. 
